@@ -95,15 +95,27 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="right">
 
+        <Button
+            android:id="@+id/BtnAjustes"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="*"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
-
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:layout_constraintDimensionRatio="16"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         android:layout_marginBottom="100dp"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
