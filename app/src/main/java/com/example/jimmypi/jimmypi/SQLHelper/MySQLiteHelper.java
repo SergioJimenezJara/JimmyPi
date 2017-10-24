@@ -117,4 +117,8 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

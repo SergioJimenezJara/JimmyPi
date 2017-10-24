@@ -35,4 +35,8 @@ public class Atajo {
     public void setAccion(String accion) {
         this.accion = accion;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
