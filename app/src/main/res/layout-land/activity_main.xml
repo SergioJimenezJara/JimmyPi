@@ -100,7 +100,7 @@
         android:layout_height="fill_parent"
         android:background="@color/colorPrimary"
         android:gravity="right">
-<<<<<<< HEAD
+
 
         <Button
             android:id="@+id/BtnAjustes"
@@ -109,16 +109,6 @@
             android:text="*"
             />
 
-    </LinearLayout>
-=======
-
-        <Button
-            android:id="@+id/BtnAjustes"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:text="*"
-            />
->>>>>>> master
 
     </LinearLayout>
 
@@ -138,7 +128,6 @@
         android:id="@+id/BtnVoz"
         android:text="Voz"
         />
-
 
 
 </android.support.constraint.ConstraintLayout>
