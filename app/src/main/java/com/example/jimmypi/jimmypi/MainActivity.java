@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         Button BtnLlamar = (Button) findViewById(R.id.BtnLlamar);
         Button BtnMusica = (Button) findViewById(R.id.BtnMusica);
         Button BtnVoz = (Button) findViewById(R.id.BtnVoz);
+        Button BtnAjustes = (Button) findViewById(R.id.BtnAjustes);
 
 
         // Escuchador evento boton central para recoger voz
@@ -37,6 +38,14 @@ public class MainActivity extends Activity {
             }
         });
 
+        // Escuchador del boton de ajustes
+        BtnAjustes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AjustesActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**

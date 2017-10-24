@@ -95,7 +95,20 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="right">
 
+        <Button
+            android:id="@+id/BtnAjustes"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="*"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
 
@@ -114,5 +127,7 @@
         android:id="@+id/BtnVoz"
         android:text="Voz"
         />
+
+
 
 </android.support.constraint.ConstraintLayout>
