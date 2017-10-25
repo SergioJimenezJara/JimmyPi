@@ -17,7 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".AjustesActivity"></activity>
+=======
+        <activity android:name=".AjustesActivity"
+            android:screenOrientation="landscape"></activity>
+>>>>>>> master
     </application>
 
 </manifest>

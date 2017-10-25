@@ -19,7 +19,6 @@ public class Atajo {
     }
 
 
-
     public String getAtajo() {
         return atajo;
     }
@@ -35,4 +34,5 @@ public class Atajo {
     public void setAccion(String accion) {
         this.accion = accion;
     }
+
 }

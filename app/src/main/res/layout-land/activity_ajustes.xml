@@ -16,6 +16,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent">
+        android:weightSum="3"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="132dp">
 
         <ListView
             android:id="@+id/ListaAjustes"
@@ -26,6 +29,9 @@
         </ListView>
 
 
+
     </LinearLayout>
 
+
 </android.support.constraint.ConstraintLayout>
+

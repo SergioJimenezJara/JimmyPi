@@ -41,7 +41,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     }
 
 
-    public void anadirAtajo(Atajo atajo){
+    public void anadirAtajo(Atajo atajo) {
 
         //Obtenemos una BD con permisos de escritura
         SQLiteDatabase db = this.getWritableDatabase();
@@ -57,13 +57,13 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public Atajo getAtajo(String atajo){
+    public Atajo getAtajo(String atajo) {
 
         // Obtenemos una BD con permisos de lectura
         SQLiteDatabase db = this.getReadableDatabase();
 
         // Creamos el cursor
-        Cursor cursor = db.rawQuery("select * from atajos where atajo="+atajo+";",null);
+        Cursor cursor = db.rawQuery("select * from atajos where atajo=" + atajo + ";", null);
 
         // Movemos el cursor al primer registro
         if (cursor != null)
@@ -79,7 +79,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return atajoBuscado;
     }
 
-    public List<Atajo> getAtajos(){
+    public List<Atajo> getAtajos() {
         List<Atajo> atajos = new ArrayList<>();
 
         String query = "SELECT  * FROM  atajos";
@@ -107,14 +107,15 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         return atajos;
     }
 
-    public void borrarAtajo(Atajo atajo){
+    public void borrarAtajo(Atajo atajo) {
 
         // Obtenemos una BD con permiso de escritura
         SQLiteDatabase db = this.getWritableDatabase();
 
-        db.delete("atajos", "atajo = ?", new String[]{ atajo.getAtajo()});
+        db.delete("atajos", "atajo = ?", new String[]{atajo.getAtajo()});
 
         db.close();
     }
-
 }
+
+

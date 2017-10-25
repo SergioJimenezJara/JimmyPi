@@ -22,15 +22,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Button BtnGps = (Button) findViewById(R.id.BtnGps);
         Button BtnLlamar = (Button) findViewById(R.id.BtnLlamar);
         Button BtnMusica = (Button) findViewById(R.id.BtnMusica);
         Button BtnVoz = (Button) findViewById(R.id.BtnVoz);
         Button BtnAjustes = (Button) findViewById(R.id.BtnAjustes);
 
-
-        // Escuchador evento boton central para recoger voz
+        // Escuchador del boton central para recoger voz
         BtnVoz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,13 +54,11 @@ public class MainActivity extends Activity {
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "What do u wanna do?");
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Que quieres hacer?");
         try {
             startActivityForResult(intent, REQ_CODE_SPEECH_INPUT);
         } catch (ActivityNotFoundException a) {
-            Toast.makeText(getApplicationContext(),
-                    "no rula",
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Algo ha fallado", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -90,6 +86,7 @@ public class MainActivity extends Activity {
 
         }
     }
+
 }
 
 
